@@ -2,6 +2,12 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, FlatList } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
+interface ProfileOption {
+  id: string;
+  title: string;
+  subtitle: string;
+}
+
 export default function ShopScreen() {
   // Datos de ejemplo para las categorías
   const categories = [
